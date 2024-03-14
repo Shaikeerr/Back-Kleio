@@ -1,0 +1,265 @@
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.flex_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+  .calendar {
+    position: relative;
+    width: 300px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    border: solid 2px #262626;
+    flex-direction: column;
+  }
+
+  .calendar__date {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+  }
+  .calendar__day {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    font-weight: 600;
+    color: #262626;
+  }
+
+  .calendar__day:nth-child(7) {
+    color: #ff685d;
+  }
+
+  h3 {
+
+    text-align: center;
+  }
+  .calendar__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    color: #262626;
+  }
+  .calendar__number:nth-child(7n) {
+    color: #ff685d;
+    font-weight: 700;
+  }
+  .calendar__number--current, .calendar__number:hover {
+    background-color: gray;
+    color: #fff !important;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .today {
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+  }
+
+  .calendar__selected {
+    background-color: gray;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+  }
+
+  .reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;;
+  }
+
+  .creneaux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin-left: 40px;
+  }
+
+  .creneau__button {
+    padding: 12px;
+    margin: 12px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50px;
+    border: solid 1px black;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .creneau__selected {
+    background-color: black;
+    color: white;
+  }
+
+  .creneau__button:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+
+  #reservation {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .confirm__button {
+    padding: 15px;
+    margin-top: 50px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50px;
+    border: solid 1px black;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #confirm_button {
+    width: 50%;
+  }
+
+  .confirm__button:hover {
+    background-color: black;
+    color: white;
+  }
+
+.choix__visiteurs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.flex__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.flex__column input {
+width: 100%;
+}
+
+.flex__column p {
+  margin: 0;
+}
+
+.container__visiteurs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.box__visiteurs {
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+  border: solid 2px black;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 300px
+}
+
+.box__visiteurs input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.box__visiteurs label {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 45%;
+}
+
+.box__visiteurs p {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 45px
+}
+
+.valider__button {
+  padding: 15px;
+  margin: 15px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 50px;
+  border: solid 1px black;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.valider__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+} 
+
